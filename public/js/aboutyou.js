@@ -17,7 +17,15 @@ document.addEventListener('DOMContentLoaded', function () {
         const lastName = document.getElementById('last-name').value.trim();
         const age = document.getElementById('age').value;
         const gender = document.getElementById('gender').value;
-        const aboutMe = document.getElementById('about-me').value.trim();
+        const marriage = document.getElementById('marriage').value;
+        const children = document.getElementById('children').value;
+        const family = document.getElementById('family').value;
+        const smoker = document.getElementById('smoker').value;
+        const debt = document.getElementById('debt').value;
+        const travel = document.getElementById('travel').value;
+        const bio = document.getElementById('bio').value.trim();
+
+
 
         if (!email || !password || !firstName || !lastName || !age || !gender) {
             alert('Please fill in all required fields.');
@@ -31,7 +39,14 @@ document.addEventListener('DOMContentLoaded', function () {
             last_name: lastName,
             age: parseInt(age, 10), 
             gender: gender,
-            about_you: aboutMe
+            marriage: marriage,
+            children: children,
+            family: family,
+            smoker: smoker,
+            debt: debt,
+            travel: travel,
+            bio: bio,
+
         };
 
         console.log('FormData being sent:', formData);

@@ -1,7 +1,7 @@
 header {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(135, 196, 237);
+    background-color: rgb(134, 193, 148);
     padding-top: 1%;
     padding-bottom: 1%;
     align-items: center;
@@ -9,6 +9,10 @@ header {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+}
+
+h3 {
+    font-size: 75pt;
 }
 
 #signinText,
@@ -46,7 +50,7 @@ header {
 #home {
     font-size: xx-large;
     text-decoration: underline;
-    color: #1c2850;
+    color: black;
 }
 
 #signup {
@@ -56,8 +60,8 @@ header {
 }
 
 h2 {
-    color: #1c2850;
-    /* text-shadow: 1px 1px 2px #1c2850, 0 0 1em blue, 0 0 0.2em blue; */
+    color: rgb(134, 193, 148);
+    text-shadow: 1px 1px 2px black, 0 0 1em gray, 0 0 0.2em gray;
     font-family: "Dancing Script", cursive;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -66,13 +70,18 @@ h2 {
 }
 
 body {
-    background-color: rgb(244, 221, 184);
+    background-color: rgb(226, 232, 227);
 }
 
 .btn {
-    background-color: rgb(135, 196, 237);
-    color: #1c2850;
-    border: #1c2850
+    background-color: rgb(134, 193, 148);
+    color: black;
+    border: black;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    justify-content: center;
 }
 
 
@@ -80,7 +89,7 @@ body {
 #logout {
     font-size: xx-large;
     text-decoration: underline;
-    color: #1c2850;
+    color: black;
     margin-right: 20px;
 }
 
@@ -88,12 +97,14 @@ body {
     margin-top: 1%;
     margin-bottom: 1%;
     padding: 1% 1%;
+    vertical-align: bottom;
 }
 
 #womenBtn {
     margin-top: 1%;
     margin-bottom: 1%;
     padding: 1%;
+    vertical-align: bottom;
 }
 
 #signupBtn {
@@ -109,21 +120,21 @@ body {
     justify-content: center;
 }
 
-#about-me {
+#bio {
     width: 40%;
     padding: 20px 40px 50px;
     margin: 8px 0;
     box-sizing: border-box;
-    border: 2px solid rgb(135, 196, 237);
+    border: 2px solid black;
     border-radius: 4px
 }
 
-:is(#signup-email, #signup-password, #first-name, #last-name, #age, #gender) {
+:is(#signup-email, #signup-password, #first-name, #last-name, #age, #gender, #marriage, #children, #family, #smoker, #debt, #travel, ) {
     width: 20%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
-    border: 2px solid #1c2850;
+    border: 2px solid black;
     border-radius: 4px;
 }
 
@@ -132,19 +143,19 @@ body {
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
-    border: 2px solid #1c2850;
+    border: 2px solid black;
     border-radius: 4px
 }
 
 #signUpbtn {
     text-align: center;
-    margin-left: 25%;
+    margin-left: 33%;
 }
 
 .connection-card,
 .profile-card {
-    border: solid #1c2850;
-    color: white;
+    border: solid black;
+    color: black;
     border-radius: 10px;
     margin-left: 20px;
     margin-right: 20px;
@@ -156,14 +167,14 @@ body {
     margin-left: 20px;
 }
 
-.btn-bd-primary, .disconnect-btn {
-    margin-left: 20px;
-    margin-bottom: 10px;
+.connect-btn, .disconnect-btn {
+    margin: 20px;
+    scroll-margin-bottom: 100px;
 }
 
 h1 {
-    color: rgb(135, 196, 237);
-    /* text-shadow: 1px 1px 2px #1c2850, 0 0 1em blue, 0 0 0.2em blue; */
+    color: rgb(134, 193, 148);
+    text-shadow: 1px 1px 2px black, 0 0 1em gray, 0 0 0.2em gray;
     font-family: "Dancing Script", cursive;
     font-optical-sizing: auto;
     font-weight: 400;

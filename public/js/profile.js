@@ -6,7 +6,13 @@ async function loadProfileData() {
         document.getElementById('profile-first-name').textContent = profileData.first_name;
         document.getElementById('profile-last-name').textContent = profileData.last_name;
         document.getElementById('profile-age').textContent = profileData.age;
-        document.getElementById('profile-about-you').textContent = profileData.about_you;
+        document.getElementById('profile-marriage').textContent = profileData.marriage;
+        document.getElementById('profile-children').textContent = profileData.children;
+        document.getElementById('profile-family').textContent = profileData.family;
+        document.getElementById('profile-smoker').textContent = profileData.smoker;
+        document.getElementById('profile-debt').textContent = profileData.debt;
+        document.getElementById('profile-travel').textContent = profileData.travel;
+        document.getElementById('profile-bio').textContent = profileData.bio;
 
         const connectionsContainer = document.getElementById('connections-container');
         connectionsContainer.innerHTML = ''; 
@@ -18,7 +24,13 @@ async function loadProfileData() {
                 <p>First Name: ${connection.first_name}</p>
                 <p>Last Name: ${connection.last_name}</p>
                 <p>Age: ${connection.age}</p>
-                <p>About You: ${connection.about_you}</p>
+                <p>Marriage: ${connection.marriage}</p>
+                <p>Children: ${connection.children}</p>
+                <p>Famly: ${connection.family}</p>
+                <p>Smoker: ${connection.smoker}</p>
+                <p>Debt: ${connection.debt}</p>
+                <p>Travel: ${connection.travel}</p>
+                <p>Bio: ${connection.bio}</p>
             `;
 
             connectionsContainer.appendChild(connectionCard);

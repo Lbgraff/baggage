@@ -1,5 +1,5 @@
 <div>
-    <h1>Men</h1>
+    <h1>Women</h1>
 </div>
 
 <div class="id-holder" data-id="{{id}}"></div>
@@ -12,8 +12,15 @@
     <p>First Name: {{user.first_name}}</p>
     <p>Last Name: {{user.last_name}}</p>
     <p>Age: {{user.age}}</p>
-    <p>About You: {{user.about_you}}</p>
-    <button class="btn-bd-primary connect-btn" data-connected-to-id="{{user.id}}">Connect</button>
+    <p>Previous Marriage: {{user.marriage}}</p>
+    <p>Children: {{user.children}}</p>
+    <p>Meddling Family: {{user.family}}</p>
+    <p>Smoker: {{user.smoker}}</p>
+    <p>Debt: {{user.debt}}</p>
+    <p>Travel for Work: {{user.travel}}</p>
+    <p>Bio: {{user.bio}}</p>
+
+    <button class="btn connect-btn" data-connected-to-id="{{user.id}}">Connect</button>
 </section>
 
 {{/each}}

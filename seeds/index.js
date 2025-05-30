@@ -1,4 +1,6 @@
-const seedUsers = require('./User-seeds')
+const { seedUsers } = require('./user-seeds');
+console.log('seedUsers import:', seedUsers);
+
 const seedConnections = require('./Connection-seeds')
 
 const sequelize = require('../config/connection')
@@ -16,4 +18,4 @@ const seedAll = async () => {
     process.exit(0)
 }
 
-seedAll()
+seedAll();
